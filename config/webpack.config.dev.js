@@ -93,6 +93,11 @@ module.exports = {
       }
     ],
     loaders: [
+      {
+        test: /\.(js|jsx)$/,
+        include: paths.appSrc,
+        loader: 'webpack-strip-block',
+      },
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,
@@ -109,19 +114,18 @@ module.exports = {
           })
         }
       },
-      {
-        test: /\.(js|jsx)$/,
-        include: paths.appSrc,
-        loader: 'webpack-strip-block',
-      },
       // "postcss" loader applies autoprefixer to our CSS.
       // "css" loader resolves paths in CSS and adds assets as dependencies.
       // "style" loader turns CSS into JS modules that inject <style> tags.
       // In production, we use a plugin to extract that CSS to a file, but
       // in development "style" loader enables hot editing of CSS.
       {
-        test: /\.s?css$/,
-        loader: '!style!css?importLoaders=1!sass!postcss'
+        test: /\.css$/,
+        loaders: ['style', 'css?importLoaders=1&modules', 'postcss']
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css?importLoaders=1&modules', 'sass?includePaths=' + paths.nodePaths, 'postcss']
       },
       // JSON is not enabled by default in Webpack but both Node and Browserify
       // allow it implicitly so we also enable it.
