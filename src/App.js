@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
 
+import '!style!css!material-design-icons/iconfont/material-icons.css'; // eslint-disable-line
+
 import AppBar from 'react-toolbox/lib/app_bar'
 import Navigation from 'react-toolbox/lib/navigation'
 import Link from 'react-toolbox/lib/link'
@@ -21,7 +23,7 @@ class App extends Component {
     // );
 
     return (
-      <AppBar title='React Toolbox' leftIcon='menu'>
+      <AppBar title='React Toolbox' leftIcon='menu' className='material-icons'>
         <Navigation type='horizontal'>
           <Link href='http://' label='Inbox' icon='inbox' />
           <Link href='http://' active label='Profile' icon='person' />
