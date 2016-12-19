@@ -104,7 +104,6 @@ module.exports = {
         include: paths.appSrc,
         loader: 'babel',
         query: {
-          
           // This is a feature of `babel-loader` for webpack (not Babel itself).
           // It enables caching results in ./node_modules/.cache/react-scripts/
           // directory for faster rebuilds. We use findCacheDir() because of:
@@ -125,7 +124,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: ['style', 'css?importLoaders=1&modules', 'sass?includePaths=' + paths.nodePaths, 'postcss']
+        loaders: ['style', 'css?importLoaders=1&modules', 'postcss', 'sass?includePaths=' + paths.nodePaths]
       },
       // JSON is not enabled by default in Webpack but both Node and Browserify
       // allow it implicitly so we also enable it.
