@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './containers/App/App'; // TODO: simplify import
 
 import 'material-design-icons/iconfont/material-icons.css';
 import 'roboto-fontface/css/roboto/roboto-fontface.css';
@@ -16,8 +16,8 @@ ReactDOM.render(
 
 /* develblock:start */
 if (module.hot) {
-  module.hot.accept('./App', () => {
-    const NextApp = require('./App').default;
+  module.hot.accept('./containers/App/App', () => { // TODO: simplify path access
+    const NextApp = require('./containers/App/App').default; // TODO: simplify path access
     ReactDOM.render(
       <NextApp />,
       rootEl
