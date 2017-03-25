@@ -9,10 +9,12 @@ import logoImg from './sloboda-logo.png'
 
 class TopBar extends Component {
   navigation() {
-    <Navigation type='horizontal'>
-      <Link href='http://' label='Inbox' icon='inbox' />
-      <Link href='http://' active label='Profile' icon='person' />
-    </Navigation>
+    return (
+      <Navigation type='horizontal'>
+        <Link href='http://' label='Inbox' icon='inbox' />
+        <Link href='http://' active label='Profile' icon='person' />
+      </Navigation>
+    )
   }
  
   render() {
