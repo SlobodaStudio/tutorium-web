@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-import StatefulTopBar from 'containers/stateful_top_bar/StatefulTopBar'
+import TopBar from 'containers/top_bar/TopBar'
 import MainArea from 'containers/main_area/MainArea'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <StatefulTopBar />
+        <TopBar />
         <MainArea />
       </div>
     )
