@@ -1,14 +1,18 @@
 import React from 'react'
+import { List, ListItem, ListSubHeader} from 'react-toolbox/lib/list'
+import styles from './MainArea.scss'
 
 function Day(props) {
   const listEvents = props.dateAndEvents.events.map((event, index) =>
-    <li key={index}>{event}</li>
+    <ListItem key={index} caption={event} className={styles.event} />
   );
   return (
-    <li key={props.dateAndEvents.date}>
-      <h2>{props.dateAndEvents.date}</h2>
-      <ul>{listEvents}</ul>
-    </li>
+    <ListItem key={props.dateAndEvents.date}>
+      <List>
+        <ListSubHeader caption={props.dateAndEvents.date} />
+        {listEvents}
+      </List>
+    </ListItem>
   );
 };
 
@@ -17,9 +21,9 @@ function DaysList(props) {
     <Day dateAndEvents={aDate} />
   );
   return (
-    <ul className="event-list">
+    <List>
       {listDays}
-    </ul>
+    </List>
   );
 };
 
@@ -45,8 +49,10 @@ class MainArea extends React.Component {
   }
   render() {
     return (
-      // <h1>Upcoming Events</h1>
-      <DaysList dates={this.state.dates} />
+      <div className={styles.container__list}>
+        <h3>Upcoming Events</h3>
+        <DaysList dates={this.state.dates} />
+      </div>
     );
   }
 }
