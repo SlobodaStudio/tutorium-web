@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 
 import TopBar from 'containers/top_bar/TopBar'
-import MainArea from 'containers/MainArea/MainArea'
+import Events from 'containers/Events/Events'
 
 class App extends Component {
   render() {
     return (
       <div>
         <TopBar />
-        <MainArea />
+        <Events />
       </div>
     )
   }

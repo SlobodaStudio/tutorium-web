@@ -1,17 +1,7 @@
 import React from 'react'
 import { List} from 'react-toolbox/lib/list'
-import Day from 'components/Day/Day'
+import Day from '../../components/Day/Day'
 import styles from './Events.scss'
-
-function DaysList(props) {
-  return (
-    <List>
-      {props.dates.map(date =>
-        <Day dateAndEvents={date} />
-      )}
-    </List>
-  );
-};
 
 class Events extends React.Component {
   constructor(props) {
@@ -37,7 +27,11 @@ class Events extends React.Component {
     return (
       <div className={styles.container__list}>
         <h3>Upcoming Events</h3>
-        <DaysList dates={this.state.dates} />
+        <List>
+          {this.state.dates.map(date =>
+            <Day dateAndEvents={date} />
+          )}
+        </List>
       </div>
     );
   }
