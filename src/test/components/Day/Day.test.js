@@ -3,23 +3,28 @@ import ReactDOM from 'react-dom';
 import { List, ListItem, ListSubHeader} from 'react-toolbox/lib/list'
 import { shallow } from 'enzyme';
 
-import Events from '../../../containers/Events/Events'
 import Day from '../../../components/Day/Day'
 
 const rootEl = document.createElement('div');
+const date = {
+                date: "March, 10",
+                events: [
+                  "Machine learning practice"
+                ]
+              };
 
 test('can be rendered', () => {
   expect(() => {
     ReactDOM.render(
       <div>
-        <Events />
+        <Day key={date.date} dateAndEvents={date}/>
       </div>,
       rootEl
     );
   }).not.toThrow();
 });
 
-test('renders two <Day /> components', () => {
-  const wrapper = shallow(<Events />);
-  expect(wrapper.find(Day).length).toBe(2);
+test('renders `ListItem`s', () => {
+  const wrapper = shallow(<Day key={date.date} dateAndEvents={date} />);
+  expect(wrapper.find(ListItem).length).toBe(2);
 });
