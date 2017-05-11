@@ -9,14 +9,18 @@ import Day from '../../../components/Day/Day'
 
 const rootEl = document.createElement('div');
 
-ReactDOM.render(
-   <div>
-      <Events />
-   </div>,
-  rootEl
-);
-
 describe('<Events />', () => {
+  it('can be rendered', () => {
+    expect(() => {
+      ReactDOM.render(
+        <div>
+          <Events />
+        </div>,
+        rootEl
+      )}
+    ).to.not.throw(Error);
+  });
+
   it('renders two <Day /> components', () => {
     const wrapper = shallow(<Events />);
     expect(wrapper.find(Day)).to.have.length(2);
