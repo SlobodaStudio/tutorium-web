@@ -29,7 +29,7 @@ class Events extends React.Component {
         <h3>Upcoming Events</h3>
         <List>
           {this.state.dates.map(date =>
-            <Day dateAndEvents={date} />
+            <Day key={date.date} dateAndEvents={date} />
           )}
         </List>
       </div>
