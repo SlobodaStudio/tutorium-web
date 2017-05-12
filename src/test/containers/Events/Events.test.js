@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { List, ListItem, ListSubHeader} from 'react-toolbox/lib/list'
+import { List, ListItem, ListSubHeader } from 'react-toolbox/lib/list';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 
-import Events from '../../../containers/Events/Events'
-import Day from '../../../components/Day/Day'
+import Events from 'containers/Events/Events';
+
+import Day from 'components/Day/Day';
 
 const rootEl = document.createElement('div');
 

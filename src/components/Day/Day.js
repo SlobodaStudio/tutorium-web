@@ -1,6 +1,6 @@
-import React from 'react'
-import { List, ListItem, ListSubHeader} from 'react-toolbox/lib/list'
-import styles from './Day.scss'
+import React from 'react';
+import { List, ListItem, ListSubHeader} from 'react-toolbox/lib/list';
+import styles from './Day.scss';
 
 function Day({ dateAndEvents: { date, events } }) {
   return (
