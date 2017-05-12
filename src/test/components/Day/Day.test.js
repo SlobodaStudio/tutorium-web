@@ -26,5 +26,5 @@ test('can be rendered', () => {
 
 test('renders `ListItem`s', () => {
   const wrapper = shallow(<Day key={date.date} dateAndEvents={date} />);
-  expect(wrapper.find(ListItem).length).toBe(2);
+  expect(wrapper.find('.day-сontent').length).toBe(1);
 });

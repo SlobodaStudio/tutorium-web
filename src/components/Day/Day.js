@@ -4,7 +4,7 @@ import styles from './Day.scss'
 
 function Day(props) {
   return (
-    <ListItem key={props.dateAndEvents.date}>
+    <ListItem key={props.dateAndEvents.date} className={"day-сontent"} >
       <List>
         <ListSubHeader caption={props.dateAndEvents.date} />
         {props.dateAndEvents.events.map((event) =>
