@@ -1,0 +1,46 @@
+exports[`test Day renders correctly 1`] = `
+<li
+  className="undefined day-сontent"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  onTouchStart={[Function]}>
+  <span
+    className="">
+    <span
+      className={undefined}>
+      <span
+        className={undefined}
+        onClick={undefined}
+        onMouseDown={undefined}>
+        <ul
+          className=""
+          data-react-toolbox="list">
+          <h5
+            className="">
+            March, 10
+          </h5>
+          <li
+            className="undefined "
+            onClick={[Function]}
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}>
+            <span
+              className="">
+              <span
+                className="">
+                <span
+                  className="undefined"
+                  data-react-toolbox="list-item-text">
+                  Machine learning practice
+                </span>
+              </span>
+            </span>
+          </li>
+        </ul>
+      </span>
+    </span>
+    <span
+      className="" />
+  </span>
+</li>
+`;

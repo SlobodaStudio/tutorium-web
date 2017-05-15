@@ -1,0 +1,117 @@
+exports[`test Events renders correctly 1`] = `
+<div
+  className={undefined}>
+  <h3>
+    Upcoming Events
+  </h3>
+  <ul
+    className=""
+    data-react-toolbox="list">
+    <li
+      className="undefined day-сontent"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onTouchStart={[Function]}>
+      <span
+        className="">
+        <span
+          className={undefined}>
+          <span
+            className={undefined}
+            onClick={undefined}
+            onMouseDown={undefined}>
+            <ul
+              className=""
+              data-react-toolbox="list">
+              <h5
+                className="">
+                March, 10
+              </h5>
+              <li
+                className="undefined "
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}>
+                <span
+                  className="">
+                  <span
+                    className="">
+                    <span
+                      className="undefined"
+                      data-react-toolbox="list-item-text">
+                      Machine learning practice
+                    </span>
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </span>
+        </span>
+        <span
+          className="" />
+      </span>
+    </li>
+    <li
+      className="undefined day-сontent"
+      onClick={[Function]}
+      onMouseDown={[Function]}
+      onTouchStart={[Function]}>
+      <span
+        className="">
+        <span
+          className={undefined}>
+          <span
+            className={undefined}
+            onClick={undefined}
+            onMouseDown={undefined}>
+            <ul
+              className=""
+              data-react-toolbox="list">
+              <h5
+                className="">
+                April, 5
+              </h5>
+              <li
+                className="undefined "
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}>
+                <span
+                  className="">
+                  <span
+                    className="">
+                    <span
+                      className="undefined"
+                      data-react-toolbox="list-item-text">
+                      Ruby vs JavaScript: be quick or be dead
+                    </span>
+                  </span>
+                </span>
+              </li>
+              <li
+                className="undefined "
+                onClick={[Function]}
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}>
+                <span
+                  className="">
+                  <span
+                    className="">
+                    <span
+                      className="undefined"
+                      data-react-toolbox="list-item-text">
+                      Super Duper JavaScript
+                    </span>
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </span>
+        </span>
+        <span
+          className="" />
+      </span>
+    </li>
+  </ul>
+</div>
+`;

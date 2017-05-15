@@ -78,6 +78,9 @@
     "heroku-postbuild": "npm install --only=dev && npm install && npm run build"
   },
   "jest": {
+    "modulePaths":[
+      "src"
+    ],
     "moduleFileExtensions": [
       "jsx",
       "js",

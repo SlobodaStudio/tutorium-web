@@ -1,7 +1,7 @@
-import React from 'react'
-import { List} from 'react-toolbox/lib/list'
-import Day from '../../components/Day/Day'
-import styles from './Events.scss'
+import React from 'react';
+import { List} from 'react-toolbox/lib/list';
+import Day from 'components/Day/Day';
+import styles from './Events.scss';
 
 class Events extends React.Component {
   constructor(props) {
