@@ -18,7 +18,7 @@ test('can be rendered', () => {
   expect(() => {
     ReactDOM.render(
       <div>
-        <Day key={date.date} dateAndEvents={date}/>
+        <Day key={date.date} date={date.date} events={date.events}/>
       </div>,
       rootEl
     );
@@ -26,13 +26,13 @@ test('can be rendered', () => {
 });
 
 test('renders `ListItem`s', () => {
-  const wrapper = shallow(<Day key={date.date} dateAndEvents={date} />);
+  const wrapper = shallow(<Day key={date.date} date={date.date} events={date.events}/>);
   expect(wrapper.find('.day-сontent').length).toBe(1);
 });
 
 test('Day renders correctly', () => {
   const tree = renderer.create(
-    <Day key={date.date} dateAndEvents={date}/>
+    <Day key={date.date} date={date.date} events={date.events}/>
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });
