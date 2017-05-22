@@ -12,7 +12,6 @@ import './index.scss';
 
 const store = createStore(reducer)
 const rootEl = document.getElementById('root');
-
 ReactDOM.render(
    <Provider store={store}>
       <App />
