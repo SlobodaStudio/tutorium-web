@@ -1,9 +1,9 @@
 const initialState = {
-  signedIn: false
+  signedIn: false,
 }
 
 export default function reducer(state = initialState, action = {}) {
   return {
-    ...state
+    ...state,
   }
 }
